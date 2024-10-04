@@ -33,6 +33,7 @@
             label1 = new Label();
             label2 = new Label();
             grpProdutcs = new GroupBox();
+            lblSelectedProduct = new Label();
             dgvProduct = new DataGridView();
             btnUpdate = new Button();
             btnDelete = new Button();
@@ -58,7 +59,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(19, 29);
+            label1.Location = new Point(19, 24);
             label1.Name = "label1";
             label1.Size = new Size(90, 15);
             label1.TabIndex = 2;
@@ -67,7 +68,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(19, 61);
+            label2.Location = new Point(19, 56);
             label2.Name = "label2";
             label2.Size = new Size(84, 15);
             label2.TabIndex = 3;
@@ -75,6 +76,7 @@
             // 
             // grpProdutcs
             // 
+            grpProdutcs.Controls.Add(lblSelectedProduct);
             grpProdutcs.Controls.Add(dgvProduct);
             grpProdutcs.Controls.Add(btnUpdate);
             grpProdutcs.Controls.Add(txtPrice);
@@ -83,44 +85,55 @@
             grpProdutcs.Controls.Add(btnAdd);
             grpProdutcs.Controls.Add(label1);
             grpProdutcs.Controls.Add(label2);
-            grpProdutcs.Location = new Point(60, 33);
+            grpProdutcs.Location = new Point(29, 33);
             grpProdutcs.Name = "grpProdutcs";
-            grpProdutcs.Size = new Size(274, 405);
+            grpProdutcs.Size = new Size(284, 405);
             grpProdutcs.TabIndex = 4;
             grpProdutcs.TabStop = false;
             grpProdutcs.Text = "Product Screen";
+            // 
+            // lblSelectedProduct
+            // 
+            lblSelectedProduct.AutoSize = true;
+            lblSelectedProduct.Location = new Point(19, 124);
+            lblSelectedProduct.Name = "lblSelectedProduct";
+            lblSelectedProduct.Size = new Size(102, 15);
+            lblSelectedProduct.TabIndex = 5;
+            lblSelectedProduct.Text = "Selected Product :";
             // 
             // dgvProduct
             // 
             dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProduct.Location = new Point(19, 151);
             dgvProduct.Name = "dgvProduct";
-            dgvProduct.SelectionMode = DataGridViewSelectionMode.FullColumnSelect;
+            dgvProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvProduct.Size = new Size(240, 232);
             dgvProduct.TabIndex = 8;
             dgvProduct.CellClick += dgvProduct_CellClick;
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(184, 96);
+            btnUpdate.Location = new Point(184, 85);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(75, 23);
             btnUpdate.TabIndex = 7;
             btnUpdate.Text = "UPDATE";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(103, 96);
+            btnDelete.Location = new Point(103, 85);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(75, 23);
             btnDelete.TabIndex = 6;
             btnDelete.Text = "DELETE";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(22, 96);
+            btnAdd.Location = new Point(22, 85);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 23);
             btnAdd.TabIndex = 5;
@@ -153,5 +166,6 @@
         private Button btnDelete;
         private Button btnAdd;
         private DataGridView dgvProduct;
+        private Label lblSelectedProduct;
     }
 }
