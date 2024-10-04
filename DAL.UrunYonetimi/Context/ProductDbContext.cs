@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DAL.UrunYonetimi.Entities.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace DAL.UrunYonetimi.Context
 {
     public class ProductDbContext : DbContext
     {
+        public DbSet<Product> Products { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=LAPTOP-3HH2461E;Database=ANK18ProductDb;Trusted_Connection=true;Trustservercertificate=true");

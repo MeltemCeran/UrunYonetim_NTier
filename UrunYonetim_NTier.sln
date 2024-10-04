@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.UrunYonetimi", "DAL.UrunYonetimi\DAL.UrunYonetimi.csproj", "{F6351366-C835-4757-8FFE-2C9B2EBE85B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.UrunYonetimi", "DAL.UrunYonetimi\DAL.UrunYonetimi.csproj", "{F6351366-C835-4757-8FFE-2C9B2EBE85B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{1E65689D-AF32-4171-A233-3FDA99EA61C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL.UrunYonetimi", "BLL.UrunYonetimi\BLL.UrunYonetimi.csproj", "{7B661FED-7EB9-487E-9A51-70246EE9E209}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{1B2A04F8-6341-4CC7-BD94-AA1E7E72C3BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.PL.UrunYonetimi", "1.PL.UrunYonetimi\1.PL.UrunYonetimi.csproj", "{DF458D5E-F38B-4028-87BA-1DC89709EB2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.PL-UI", "1.PL-UI", "{BCE03913-F8BB-4845-AA3B-15FF082599FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +25,22 @@ Global
 		{F6351366-C835-4757-8FFE-2C9B2EBE85B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6351366-C835-4757-8FFE-2C9B2EBE85B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6351366-C835-4757-8FFE-2C9B2EBE85B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B661FED-7EB9-487E-9A51-70246EE9E209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B661FED-7EB9-487E-9A51-70246EE9E209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B661FED-7EB9-487E-9A51-70246EE9E209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B661FED-7EB9-487E-9A51-70246EE9E209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF458D5E-F38B-4028-87BA-1DC89709EB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF458D5E-F38B-4028-87BA-1DC89709EB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF458D5E-F38B-4028-87BA-1DC89709EB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF458D5E-F38B-4028-87BA-1DC89709EB2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F6351366-C835-4757-8FFE-2C9B2EBE85B3} = {1E65689D-AF32-4171-A233-3FDA99EA61C0}
+		{7B661FED-7EB9-487E-9A51-70246EE9E209} = {1B2A04F8-6341-4CC7-BD94-AA1E7E72C3BB}
+		{DF458D5E-F38B-4028-87BA-1DC89709EB2C} = {BCE03913-F8BB-4845-AA3B-15FF082599FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {95EA6E25-6FC9-4437-AE64-4BD1A39526B0}
